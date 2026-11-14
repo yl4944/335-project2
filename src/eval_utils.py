@@ -1,13 +1,4 @@
-"""Shared training / logging / analysis (Member 5).  Put in src/eval_utils.py
 
-Row schema = Matthew's run_resnet.py history rows, so nothing he wrote changes:
-  epoch, train_loss, train_time, eval_loss, eval_time,
-  accuracy (caltech)  |  micro_precision, micro_recall, micro_f1 (voc),
-  cumulative_train_time
-
-Both ResNet and ViT call fit(). It saves one JSON per run:
-  results/{model}_{dataset}_{size}_{init}[_{tag}]_s{seed}.json
-"""
 import json
 import os
 import time
